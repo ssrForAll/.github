@@ -165,6 +165,8 @@ Bugs that will occur f-push="/repositories/public/maven" in a case like this. it
 When data is sent into the page render in the backend. By default it would use this data inside the backend render. Then it will put the data as a global variable in the web scripts. You can mark the data to just use backend render then not pass it the frontend for extra rendering
 
 In our example above NavBar checks to see if user is defined and if so it says the user is logged in.
+# Web Request Flow Chart
+![New Flowchart](https://user-images.githubusercontent.com/11785959/167427492-151ac427-5595-4967-9ca0-1460097c20a3.jpg)
 
 ### Macro Explained
 sfa_context!({user: user} The user object would go through the stages of rendering on the backend. And then in a script tag injected on the page would create const user = {JSON version of the user object}.
